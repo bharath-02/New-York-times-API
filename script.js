@@ -1,5 +1,5 @@
 var topbar = document.createElement('div');
-topbar.setAttribute('class','topbar');
+topbar.setAttribute('class','topbar fixed-top');
 topbar.id='myTopBar';
 var a1 = document.createElement('a');
 a1.id = 'home';
@@ -72,8 +72,14 @@ document.body.append(topbar);
 topbar.append(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, icon);
 icon.append(i);
 
+var section=document.createElement('section');
+section.id='section';
+section.innerHTML='To Watch, the best and Live NEWS across the World, choose your category above...!!!!';
+
+document.body.append(section);
 
 async function getStarted(id) {
+    document.getElementById('section').style.display='none';
     document.getElementById('content').innerHTML = '';
     var response = await fetch('https://api.nytimes.com/svc/topstories/v2/' + id + '.json?api-key=JEvDvckARWaFARSG7Ahl0m5cqj6RDSGO')
     var data = await response.json();

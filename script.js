@@ -1,5 +1,5 @@
 var topbar = document.createElement('div');
-topbar.setAttribute('class','topbar fixed-top');
+topbar.setAttribute('class','topbar');
 topbar.id='myTopBar';
 var a1 = document.createElement('a');
 a1.id = 'home';

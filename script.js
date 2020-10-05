@@ -3,6 +3,7 @@ topbar.setAttribute('class','topbar');
 topbar.id='myTopBar';
 var a1 = document.createElement('a');
 a1.id = 'home';
+a1.setAttribute('class','active');
 a1.setAttribute('onclick', 'getStarted("home")');
 a1.setAttribute('href', '#');
 a1.innerHTML = 'HOME'

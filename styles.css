@@ -50,6 +50,7 @@ body {
     width:40%;
     height:150px;
     padding:15px;
+    font-size: 24px;
     border-radius: 1px solid black;
     background-color: lightgray;
     margin:100px auto;
@@ -96,12 +97,11 @@ body {
         font-size: 13px;
         padding:15px 10px;
     }
-}
-/* @media (max-width:905px) {
-    .topbar a {
-        font-size:11px;
+    #section {
+        font-size:20px;
     }
-} */
+}
+
 @media (max-width:905px) {
     .topbar a {
         font-size: 11px;
@@ -124,6 +124,10 @@ body {
 @media (max-width:600px) {
     .card {
         width:200px;
+    }
+    #section {
+        font-size: 16px;
+        height:150px;
     }
 }
 @media screen and (max-width:560px) {
@@ -154,5 +158,10 @@ body {
     #section {
         margin:150px auto;
         height:170px;
+    }
+}
+@media (max-width:410px) {
+    #section {
+        font-size:14px;
     }
 }
